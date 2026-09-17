@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+        "model": "firstmcmod:block/ichor_block"
+    }
+  }
+}

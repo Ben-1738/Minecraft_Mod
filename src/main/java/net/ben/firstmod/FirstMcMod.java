@@ -1,6 +1,7 @@
 package net.ben.firstmod;
 
 import com.mojang.logging.LogUtils;
+import net.ben.firstmod.block.ModBlocks;
 import net.ben.firstmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -37,6 +38,7 @@ public class FirstMcMod
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -56,6 +58,11 @@ public class FirstMcMod
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.ICHOR);
             event.accept(ModItems.RAW_ICHOR);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.ICHOR_BLOCK);
+            event.accept(ModBlocks.RAW_ICHOR_BLOCK);
         }
 
     }

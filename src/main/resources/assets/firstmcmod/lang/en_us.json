@@ -1,4 +1,7 @@
 {
   "item.firstmcmod.ichor": "Ichor Ingot",
-  "item.firstmcmod.raw_ichor": "Raw Ichor"
+  "item.firstmcmod.raw_ichor": "Raw Ichor",
+
+  "block.firstmcmod.ichor_block": "Ichor Block",
+  "block.firstmcmod.raw_ichor_block": "Raw Ichor Block"
 }
